@@ -13,3 +13,7 @@ streamlit run app.py
 ## Data
 - Option A (recommended): Use the file uploader in the app.
 - Option B: Put your dataset at: data/public_health.csv
+
+visit by:
+Local URL: http://localhost:8502
+Network URL: http://10.24.19.95:8502
