@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public Health EDA Dashboard (Synthetic)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">🩺</span>
+      <div>
+        <h1>Public Health EDA Dashboard</h1>
+        <p>Synthetic dataset • Pandas • Matplotlib • Seaborn</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#overview" class="nav-link">Overview</a>
+      <a href="#dashboard" class="nav-link">Dashboard</a>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#how" class="nav-link">How to run</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="overview" class="hero">
+      <div class="hero-card">
+        <h2>Explore data quality & patterns</h2>
+        <p>
+          EDA (Exploratory Data Analysis) is the early stage of data work where you investigate your 
+          dataset to understand its structure, patterns, and quality before building models or drawing 
+          final conclusions.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#dashboard">Open Dashboard</a>
+        </div>
+
+        <div class="badges">
+          <span class="pill">EDA</span>
+          <span class="pill">Missing Values</span>
+          <span class="pill">Correlation Heatmap</span>
+          <span class="pill">Outliers</span>
+          <span class="pill">Group Comparisons</span>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="stat-grid">
+          <div class="stat">
+            <div class="stat-num">7</div>
+            <div class="stat-label">EDA Sections</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Synthetic Dataset</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Real Patterns</div>
+            <div class="stat-label">Risk-driven variables</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Fast</div>
+            <div class="stat-label">No data upload required</div>
+          </div>
+        </div>
+
+        <div class="note">
+          <div class="note-title">Warning</div>
+          <p>
+            If you use your original data, please use with caution.
+          </p>
+        </div>
+      </div>
+    </section>
+  <!--
+    <section id="dashboard" class="section">
+      <div class="section-head">
+        <h3>Dashboard</h3>
+        <p>Embed your Streamlit app here.</p>
+      </div>
+
+      <div class="card">
+        <div class="embed-wrap">
+          
+          <iframe
+            title="Public Health EDA Dashboard"
+            src="http://localhost:8502"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+ --->
+        <div class="legend">
+          <span class="dot good"></span> Works best on desktop width ≥ 900px
+          <span class="sep">•</span>
+          <span class="dot info"></span> You can scroll inside the dashboard
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head">
+        <h3>What you’ll find</h3>
+        <p>All the core EDA panels used in the project.</p>
+      </div>
+
+      <div class="grid">
+        <article class="feature">
+          <div class="icon">🧼</div>
+          <h4>Data Quality</h4>
+          <p>Missing values table + duplicate row count.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon">📊</div>
+          <h4>Distributions & Outliers</h4>
+          <p>Histogram + KDE and boxplots for any numeric feature.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon">🧠</div>
+          <h4>Correlation Heatmap</h4>
+          <p>Find relationships between numeric variables.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon">🎯</div>
+          <h4>Outcome Summary</h4>
+          <p>Disease outcome counts and rates.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon">🗂️</div>
+          <h4>Categorical Breakdown</h4>
+          <p>Top categories for any categorical column.</p>
+        </article>
+
+        <article class="feature">
+          <div class="icon">🔎</div>
+          <h4>Group Comparisons</h4>
+          <p>Boxplot of a numeric metric grouped by a category.</p>
+        </article>
+      </div>
+    </section>
+<!-----
+    <section id="how" class="section">
+      <div class="section-head">
+        <h3>How to run</h3>
+        <p>Simple commands you can paste into your terminal.</p>
+      </div>
+
+      <div class="card">
+        <div class="code-title">Run Streamlit</div>
+        <pre class="code"><code>
+pip install -r requirements.txt
+streamlit run dashboard/app.py
+        </code></pre>
+        <p class="muted">
+          Then open <strong>http://localhost:8502</strong> 
+          If your page iframe uses <code>localhost</code>, it will embed automatically.
+        </p>
+      </div>
+    -->
+      <footer class="footer">
+        <div class="footer-left">
+          <div class="footer-logo">Public Health EDA</div>
+          <div class="footer-muted">Built with Python • Pandas • Matplotlib • Seaborn</div>
+        </div>
+        <div class="footer-right">
+          <span class="kbd">HTML</span>
+          <span class="kbd">CSS</span>
+          <span class="kbd">Streamlit Embed</span>
+        </div>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

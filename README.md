@@ -15,5 +15,5 @@ streamlit run app.py
 - Option B: Put your dataset at: data/public_health.csv
 
 visit by:
-Local URL: http://localhost:8502
-Network URL: http://10.24.19.95:8502
+Local URL: http://127.0.0.1:5500/index.html
+
